@@ -17,7 +17,7 @@ type intSlice []int64
 
 // LoadInput loads a puzzle's input from a path p into a string.
 func LoadInput(p string) string {
-	input, err := ioutil.ReadFile("input.txt")
+	input, err := ioutil.ReadFile(p)
 	if err != nil {
 		log.Fatal("Couldn't load puzzle input.")
 	}
